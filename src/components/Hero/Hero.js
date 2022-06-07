@@ -11,7 +11,7 @@ const Hero = () => (
         Hi I'm Andre
       </SectionTitle>
       <SectionText>
-        I develop the web.
+        Web Developer.
       </SectionText>
       <Button onClick={() => window.location = '#projects'} >
         Learn More

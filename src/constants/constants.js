@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'ONK E-Commerce',
-    description: "Using React, Next.js, Sanity.io, Stripe API & Vercel for deployment - This is a fully functional E-Commerce solution built from scratch. It leverages Next.js for beautifuly fast components, Stripe's seamless API integration for paymen portal, and Sanity.io as a headless content manager.",
+    description: "Fully functional E-Commerce store using Stripe for payment and Sanity.io as a headless content manager.",
       image: '/images/1.png',
       tags: ['React', 'NextJS', 'Sanity.io','Stripe API', 'Vercel'],
     source: 'https://github.com/gibstock/onk-ecommerce',
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: 'GPS Activated Apps',
-    description:"Built for the art department at American River College. This progressive web app displays the art around campus along with a sound description of the art and the artist. These features automatically display when in front of the art.",
+    description:"Location activated progressive web app that displays art information around campus.",
     image: '/images/2.png',
     tags: ['PWA', 'HTML', 'CSS', 'JavaScript'],
     source: 'https://github.com/design-hub-arc/arc-art-walkabout',
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'Real-Time Video Chat',
-    description: "Built a real-time video chat app using React and Agora.io. Users can easily create and share a video conference and also chat.",
+    description: "Real-time video chat web app with text chat and user generated poll.",
       image: '/images/3.png',
       tags: ['React', 'Agora.io'],
     source: '#',
@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'Actor Searching App',
-    description: "This app, called What From, searches an actor's work. I first created the API that crawls IMDB for data and created this app as the front-end for the API. I wanted a simpler version of IMDB, as I'm frequently asking what an actor is from.",
+    description: "App for quickly looking up movies actors have been in. Consuming my own API.",
     image: '/images/4.png',
     tags: ['React', 'API', 'Material UI', 'Axios'],
     source: 'https://github.com/gibstock/react-what-from-app',
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     title: 'Get Happy Faces',
-    description: "Get Happy Faces started out as a way for me to cope with tough news. It quickly became a fun, larger project that my nieces and nephews are addicted to playing. Uses HTML, CSS and Vanilla JavaScript for the entire project. I learned how to work with touch events and how to use a Google Sheet as a database for the leaderboard.",
+    description: "Fun game where you try to fill the board with faces before the clock runs out. Features a real-time leaderboard.",
     image: '/images/5.png',
     tags: ['HTML', 'CSS', 'JavaScript', 'Google Sheets'],
     source: 'https://github.com/gibstock/get-happy',

@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import Link from 'next/link'
+import { FlexColCenter, BlogLink, BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
@@ -12,26 +12,32 @@ const Projects = () => (
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map(({id, image, title, description, tags, source, visit}) => (
+        <BlogLink href={visit} target="_blank" rel='noreferrer'>
           <BlogCard key={id}>
-            <Img src={image} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
+              <Img src={image} />
             </div>
-            <UtilityList>
-              <ExternalLinks href={source}>Code</ExternalLinks>
-              <ExternalLinks href={visit}>Visit</ExternalLinks>
-            </UtilityList>
+            <FlexColCenter>
+              <TitleContent>
+                <HeaderThree title>{title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo>{description}</CardInfo>
+              <div style={{width: '100%'}}>
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
+                  ))}
+                </TagList>
+              </div>
+              <UtilityList>
+                <ExternalLinks href={source}>Code</ExternalLinks>
+                {/* <ExternalLinks href={visit}>Visit</ExternalLinks> */}
+              </UtilityList>
+            </FlexColCenter>
           </BlogCard>
+        </BlogLink>
         ))}
     </GridContainer>
   </Section>

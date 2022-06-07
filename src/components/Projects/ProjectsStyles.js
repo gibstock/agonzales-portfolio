@@ -5,11 +5,13 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 25px;
+  padding: 1em;
 `
 
 export const GridContainer = styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 padding: 3rem;
 place-items: center;
 column-gap: 2rem;
@@ -23,11 +25,18 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(225deg, hsla(250, 50%, 50%, .5), transparent),
+  linear-gradient(39deg, hsla(10, 70%, 50%, .5), transparent) ;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 `;
@@ -35,7 +44,7 @@ export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-
+  color: white;
 `;
 
 
@@ -100,6 +109,13 @@ transition: 0.5s;
 
 }
 `;
+export const BlogLink = styled.a`
+transition: all 2.5s;
+&:hover{
+  transition: all 2.5s;
+  transform: scale(.95);
+}
+`;
 
 export const TagList = styled.ul`
 display: flex;
@@ -107,6 +123,16 @@ justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
+color: hsla(250, 70%, 90%, 1);
+font-size: 2.5rem;
+background-image: linear-gradient(270deg, #F46737 0%, #945DD6 100%);
+border-radius: 25px;
+padding: .2em;
+`
+export const FlexColCenter = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1em;
 `
