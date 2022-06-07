@@ -1,0 +1,55 @@
+export const projects = [
+  {
+    title: 'ONK E-Commerce',
+    description: "Using React, Next.js, Sanity.io, Stripe API & Vercel for deployment - This is a fully functional E-Commerce solution built from scratch. It leverages Next.js for beautifuly fast components, Stripe's seamless API integration for paymen portal, and Sanity.io as a headless content manager.",
+      image: '/images/1.png',
+      tags: ['React', 'NextJS', 'Sanity.io','Stripe API', 'Vercel'],
+    source: 'https://github.com/gibstock/onk-ecommerce',
+    visit: 'https://onk-ecommerce.vercel.app/',
+    id: 0,
+  },
+  {
+    title: 'GPS Activated Apps',
+    description:"Built for the art department at American River College. This progressive web app displays the art around campus along with a sound description of the art and the artist. These features automatically display when in front of the art.",
+    image: '/images/2.png',
+    tags: ['PWA', 'HTML', 'CSS', 'JavaScript'],
+    source: 'https://github.com/design-hub-arc/arc-art-walkabout',
+    visit: 'https://arc-art-walkabout-demo.netlify.app/',
+    id: 1,
+  },
+  {
+    title: 'Real-Time Video Chat',
+    description: "Built a real-time video chat app using React and Agora.io. Users can easily create and share a video conference and also chat.",
+      image: '/images/3.png',
+      tags: ['React', 'Agora.io'],
+    source: '#',
+    visit: 'https://kcvidchat.netlify.app/create',
+    id: 2,
+  },
+  {
+    title: 'Actor Searching App',
+    description: "This app, called What From, searches an actor's work. I first created the API that crawls IMDB for data and created this app as the front-end for the API. I wanted a simpler version of IMDB, as I'm frequently asking what an actor is from.",
+    image: '/images/4.png',
+    tags: ['React', 'API', 'Material UI', 'Axios'],
+    source: 'https://github.com/gibstock/react-what-from-app',
+    visit: 'https://react-what-from-app.herokuapp.com/',
+    id: 3,
+  },
+  {
+    title: 'Get Happy Faces',
+    description: "Get Happy Faces started out as a way for me to cope with tough news. It quickly became a fun, larger project that my nieces and nephews are addicted to playing. Uses HTML, CSS and Vanilla JavaScript for the entire project. I learned how to work with touch events and how to use a Google Sheet as a database for the leaderboard.",
+    image: '/images/5.png',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Google Sheets'],
+    source: 'https://github.com/gibstock/get-happy',
+    visit: 'https://get-happy.netlify.app/',
+    id: 4,
+  },
+];
+
+export const TimeLineData = [
+  { year: 2018, text: 'Started my journey', },
+  { year: 2019, text: 'Completed Udemy ZTM Course', },
+  { year: 2020, text: 'Retired from bartending to focus on coding', },
+  { year: 2021, text: 'Started internship with the Design Hub', },
+  { year: 2022, text: 'Started my own freelance business', },
+];
