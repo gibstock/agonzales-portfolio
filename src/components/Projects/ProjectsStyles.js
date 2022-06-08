@@ -32,14 +32,14 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 100%;
   min-height: 400px;
-  background-image: linear-gradient(225deg, hsla(250, 50%, 50%, .5), transparent),
-  linear-gradient(39deg, hsla(10, 70%, 50%, .5), transparent) ;
+  background-image: linear-gradient(225deg, hsla(250, 50%, 50%, .3), transparent),
+  linear-gradient(39deg, hsla(10, 70%, 50%, .3), transparent) ;
   @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(39deg, hsla(250, 50%, 50%, .5), transparent),
-  linear-gradient(225deg, hsla(10, 70%, 50%, .5), transparent) ;
+    background-image: linear-gradient(39deg, hsla(250, 50%, 50%, .3), transparent),
+  linear-gradient(225deg, hsla(10, 70%, 50%, .3), transparent) ;
   }
 `;
 export const TitleContent = styled.div`
