@@ -32,28 +32,28 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 100%;
   min-height: 400px;
-  background-image: linear-gradient(225deg, hsla(250, 50%, 50%, .3), transparent),
-  linear-gradient(39deg, hsla(10, 70%, 50%, .3), transparent) ;
+  background-image: linear-gradient(225deg, hsla(250, 50%, 90%, .3), transparent),
+  linear-gradient(39deg, hsla(10, 70%, 90%, .3), transparent) ;
   @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(39deg, hsla(250, 50%, 50%, .3), transparent),
-  linear-gradient(225deg, hsla(10, 70%, 50%, .3), transparent) ;
+    background-image: linear-gradient(39deg, hsla(250, 50%, 90%, .3), transparent),
+  linear-gradient(225deg, hsla(10, 70%, 90%, .3), transparent) ;
   }
 `;
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-  color: white;
+  color: hsl(210,25%,25%);
 `;
 
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: hsl(210, 45%, 50%);
   padding: .5rem 0;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
@@ -80,7 +80,7 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: #e4e6e7;
+  color: hsl(210, 20%, 15%);
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -100,14 +100,16 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
+color: hsl(0,0%,95%);
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
+background: hsl(210, 75%, 55%);
+border-radius: 25px;
+border: 1px solid hsl(210, 50%, 50%);
 transition: 0.5s;
 &:hover{
-  background: #801414;
+  background: hsl(210, 50%, 90%);
+  color: hsl(0, 0%, 10%);
 
 }
 `;
@@ -130,9 +132,9 @@ padding: 2rem;
 }
 `
 export const Tag = styled.li`
-color: hsla(250, 70%, 90%, 1);
+color: hsla(210, 0%, 95%, 1);
 font-size: 2.5rem;
-background-image: linear-gradient(270deg, #F46737 0%, #945DD6 100%);
+background-image: linear-gradient(270deg, hsl(210, 50%, 50%) 0%, hsl(250, 50%, 50%) 100%);
 border-radius: 25px;
 padding: .2em;
 @media ${(props) => props.theme.breakpoints.sm} {

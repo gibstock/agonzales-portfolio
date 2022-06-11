@@ -10,7 +10,7 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px'}}>
+        <a style={{ display: "flex", alignItems: "center", color: "hsl(210, 0%, 0%)", marginBottom: '20px'}}>
           <GiArtificialHive size="3rem" /><Span>Andre</Span>
         </a>
       </Link>
