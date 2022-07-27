@@ -132,9 +132,9 @@ padding: 2rem;
 }
 `
 export const Tag = styled.li`
-color: hsla(210, 0%, 95%, 1);
+color: hsla(210, 0%, 25%, 1);
 font-size: 2.5rem;
-background-image: linear-gradient(270deg, hsl(210, 50%, 50%) 0%, hsl(250, 50%, 50%) 100%);
+// background-image: linear-gradient(270deg, hsl(210, 50%, 50%) 0%, hsl(250, 50%, 50%) 100%);
 border-radius: 25px;
 padding: .2em;
 @media ${(props) => props.theme.breakpoints.sm} {

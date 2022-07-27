@@ -11,7 +11,7 @@ const Header = () =>  (
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center", color: "hsl(210, 0%, 0%)", marginBottom: '20px'}}>
-          <GiArtificialHive size="3rem" /><Span>Andre</Span>
+          <GiArtificialHive size="3rem" /><Span>Andre | Web Dev</Span>
         </a>
       </Link>
     </Div1>
