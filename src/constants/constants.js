@@ -3,7 +3,7 @@ export const projects = [
     title: 'ANCH Clothing',
     description: "Clothing E-Commerce site for the ANCH clothing brand.",
       image: '/images/anch.png',
-      tags: ['React', 'NEXTJS', 'Firebase Auth','Firestore', 'Netlify'],
+      tags: ['React', 'Styled-Components', 'Firebase Auth','Firestore', 'Netlify'],
     source: 'https://github.com/gibstock/onk-clothing-storefront',
     visit: 'https://anch-clothing.netlify.app/',
     id: 0,
