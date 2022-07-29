@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const DropDownContainer = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,41 +76,49 @@ export const DropDownItem = styled.a`
 `
 
 export const DropDownIcon = styled.div`
-  width: 6em;
+  // width: em;
   height: 4em;
   background-color: black;
   border: none;
   border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  transform: rotate(-90deg);
-  padding: 1.5em;
+  justify-content: flex-end;
+  align-items: center;
+  // transform: rotate(-90deg);
+  padding: 1.5em .3em; 
   position: fixed;
-  left: -3vh;
-  top: 10vw;
+  left: 0;
+  top: 10vh;
   z-index: 100;
   cursor: pointer;
   font-size: 1.1em;
+
+  span {
+    transform: rotate(90deg);
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     left: unset;
-    right: -5vw;
+    right: 0;
     top: 10vh;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 0;
+
+    span {
+      transform: rotate(-90deg);
+    }
   }
+
   &:hover {
     box-shadow: -2px 2px 8px black;
   }
 
-  span:hover {
-    transform: ${({ active }) => active ? 'rotate(360deg)' : 'rotate(0deg)'}
-    
-  }
+  
 `
 
 export const DropDownTextContainer = styled.div`
