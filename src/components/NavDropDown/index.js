@@ -8,9 +8,14 @@ const NavDropDown = (props) => {
   const [isActive, setIsActive] = useState(false)
   const [menu, setMenu] = useState('MENU')
 
+  const menuOutput = {
+    open: 'MENU',
+    close: String.fromCharCode(0x2715)
+  }
+
   const dropDownClickHandler = () => {
     setIsActive(!isActive)
-    !isActive ? setMenu('X') : setMenu('MENU')
+    !isActive ? setMenu(menuOutput.close) : setMenu(menuOutput.open)
   }
 
   return(
@@ -18,21 +23,21 @@ const NavDropDown = (props) => {
       <DropDownIcon  onClick={dropDownClickHandler}><span active={isActive}>{menu}</span>
       </DropDownIcon>
       <DropDownContainer active={isActive}>
-        <DropDownItem href='#projects'>
+        <DropDownItem href='#projects' onClick={dropDownClickHandler}>
           <DropDownTextContainer>
             <span>01</span>
             <DropDownItemTitle>Projects</DropDownItemTitle>
             <DropDownItemDesc>Things I've Built</DropDownItemDesc>
           </DropDownTextContainer>
         </DropDownItem>
-        <DropDownItem href='#tech'> 
+        <DropDownItem href='#tech' onClick={dropDownClickHandler}> 
           <DropDownTextContainer>
             <span>02</span>
             <DropDownItemTitle>Technologies</DropDownItemTitle>
             <DropDownItemDesc>Things I've Used</DropDownItemDesc>
           </DropDownTextContainer>
         </DropDownItem>
-        <DropDownItem href='#about'>
+        <DropDownItem href='#about' onClick={dropDownClickHandler}>
           <DropDownTextContainer>
             <span>03</span>
             <DropDownItemTitle>About</DropDownItemTitle>

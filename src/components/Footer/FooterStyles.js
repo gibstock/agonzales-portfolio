@@ -24,7 +24,7 @@ export const LinkItem = styled.a`
 	left: 0;
 
 	&:hover {
-		color: #fff;
+		color: rgba(0, 0, 0, 1);
 		left: 6px;
 	}
 
@@ -35,7 +35,7 @@ export const LinkItem = styled.a`
 	}
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 8px;
+		font-size: 16px;
 		line-height: 14px;
 		margin-bottom: 8px;
 		display: flex;
@@ -145,14 +145,14 @@ export const LinkColumn = styled.div`
 export const LinkTitle = styled.h4`
 	font-style: normal;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 10px;
+		font-size: 14px;
 		line-height: 12px;
 		margin-bottom: 8px;
 	}

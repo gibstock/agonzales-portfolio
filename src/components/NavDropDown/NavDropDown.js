@@ -76,7 +76,7 @@ export const DropDownItem = styled.a`
 `
 
 export const DropDownIcon = styled.div`
-  // width: em;
+  width: 3em;
   height: 4em;
   background-color: black;
   border: none;
@@ -86,7 +86,7 @@ export const DropDownIcon = styled.div`
   border-top-left-radius: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   // transform: rotate(-90deg);
   padding: 1.5em .3em; 
