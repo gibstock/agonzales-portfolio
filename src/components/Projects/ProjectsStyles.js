@@ -7,15 +7,19 @@ export const Img = styled.img`
   overflow: hidden;
   border-radius: 25px;
   padding: 1em;
+  transition: all .55s ease;
 `
 
 export const GridContainer = styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 padding: 3rem;
-place-items: center;
+place-items: start;
 column-gap: 2rem;
 row-gap: 3rem;
+
+
+
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
@@ -26,20 +30,23 @@ row-gap: 3rem;
 `
 export const BlogCard = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  // box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 100%;
   min-height: 400px;
-  background-image: linear-gradient(225deg, hsla(250, 50%, 90%, .3), transparent),
-  linear-gradient(39deg, hsla(10, 70%, 90%, .3), transparent) ;
+  // overflow: hidden;
+  border: 1px solid hsl(0,50%, 10%);
+  // background-image: linear-gradient(225deg, hsla(250, 50%, 90%, .3), transparent),
+  // linear-gradient(39deg, hsla(10, 70%, 90%, .3), transparent) ;
+  
   @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(39deg, hsla(250, 50%, 90%, .3), transparent),
-  linear-gradient(225deg, hsla(10, 70%, 90%, .3), transparent) ;
+  //   background-image: linear-gradient(39deg, hsla(250, 50%, 90%, .3), transparent),
+  // linear-gradient(225deg, hsla(10, 70%, 90%, .3), transparent) ;
   }
 `;
 export const TitleContent = styled.div`
@@ -114,10 +121,19 @@ transition: 0.5s;
 }
 `;
 export const BlogLink = styled.a`
-transition: all 2.5s;
-&:hover{
-  transition: all 2.5s;
-  transform: scale(.95);
+transition: transform .55s;
+&:hover ${Img}{
+  transform: translateY(-25%) scale(1.05);
+  transition: transform .55s ease;
+  border: 1px solid hsl(210, 100%, 50%);
+  background: #ffffff;
+  box-shadow: 0px 3px 2px hsl(210, 100%, 23%);
+}
+
+
+
+&:nth-last-of-type(){
+  grid-column: 1/-1;
 }
 `;
 
@@ -133,7 +149,7 @@ padding: 2rem;
 `
 export const Tag = styled.li`
 color: hsla(210, 0%, 25%, 1);
-font-size: 2.5rem;
+font-size: 1.5rem;
 // background-image: linear-gradient(270deg, hsl(210, 50%, 50%) 0%, hsl(250, 50%, 50%) 100%);
 border-radius: 25px;
 padding: .2em;

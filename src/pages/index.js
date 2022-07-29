@@ -11,11 +11,11 @@ const Home = () => {
   return (
     <Layout>
       <Section grid>
-        <Hero />
-        <BgAnimation />
+        {/* <Hero /> */}
+        {/* <BgAnimation /> */}
       </Section>
       <Projects />
-      {/* <Technologies /> */}
+      <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}
     </Layout>

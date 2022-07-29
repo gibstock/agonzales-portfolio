@@ -5,6 +5,6 @@ export const AnimationContainer = styled.div`
   top:0;
   left: 0;
   width: 100%;
-  opacity: .3;
+  opacity: .1;
 
 `

@@ -8,6 +8,7 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
+  // position: relative;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -21,30 +22,34 @@ export const Span = styled.span`
   font-size: 2rem
 `;
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 3;
   display: flex;
   flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 5;
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  // grid-area: 2 / 1 / 3 / -1;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  // position: relative;
+  // right: 0;
+  // top: 50%;
+
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 1 / 3 / -1;
   }
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    grid-area: 1 / 5 / 2 / -1;
   }
 `;
 

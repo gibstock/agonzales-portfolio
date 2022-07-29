@@ -12,7 +12,7 @@ const Technologies = () =>  (
     <SectionText>I've worked with a range of technologies in the web development world from back-end to front-end. There's a tool for every problem.</SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" />
+        <DiReact size="3rem" color='black'/>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -22,7 +22,7 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size="3rem" />
+        <DiFirebase size="3rem" color='black'/>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
@@ -32,12 +32,12 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <GiGears size="3rem" />
+        <GiGears size="3rem" color='black'/>
         <ListContainer>
           <ListTitle>DevOps</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Netlify, Heroku, Vercel, Strapi CMS, Sanity.io
+            Netlify, Heroku, Vercel, Strapi CMS, Sanity.io, Nginx
           </ListParagraph>
         </ListContainer>
       </ListItem>
