@@ -1,13 +1,13 @@
 export const projects = [
-  {
-    title: 'ANCH Clothing',
-    description: "Clothing E-Commerce site for the ANCH clothing brand.",
-      image: '/images/anch.png',
-      tags: ['React', 'Styled-Components', 'Firebase Auth','Firestore', 'Netlify'],
-    source: 'https://github.com/gibstock/onk-clothing-storefront',
-    visit: 'https://anch-clothing.netlify.app/',
-    id: 0,
-  },
+  // {
+  //   title: 'ANCH Clothing',
+  //   description: "Clothing E-Commerce site for the ANCH clothing brand.",
+  //     image: '/images/anch.png',
+  //     tags: ['React', 'Styled-Components', 'Firebase Auth','Firestore', 'Netlify'],
+  //   source: 'https://github.com/gibstock/onk-clothing-storefront',
+  //   visit: 'https://anch-clothing.netlify.app/',
+  //   id: 0,
+  // },
   {
     title: 'Code Distiller',
     description: "Movie Review website where anyone can write a review. Built with Express, deployed to DigitalOcean.",
@@ -18,7 +18,7 @@ export const projects = [
     id: 1,
   },
   {
-    title: 'ONK E-Commerce',
+    title: 'E-Commerce',
     description: "Fully functional E-Commerce store using Stripe for payment and Sanity.io as a headless content manager.",
       image: '/images/1.png',
       tags: ['React', 'NextJS', 'Sanity.io','Stripe API', 'Vercel'],
