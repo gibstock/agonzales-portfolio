@@ -32,14 +32,20 @@ export const BlogCard = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 10px;
-  // box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 100%;
   min-height: 400px;
   // overflow: hidden;
-  border: 1px solid hsl(0,50%, 10%);
+  // border: 1px solid hsl(0,50%, 10%);
   // background-image: linear-gradient(225deg, hsla(250, 50%, 90%, .3), transparent),
   // linear-gradient(39deg, hsla(10, 70%, 90%, .3), transparent) ;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: hsl(210, 25%, 90%);
+    box-shadow: 3px 3px 20px hsl(210, 25%, 90%);
+  }
   
   @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
@@ -110,12 +116,12 @@ export const ExternalLinks = styled.a`
 color: hsl(0,0%,95%);
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: hsl(210, 75%, 55%);
+// background: hsl(210, 75%, 55%);
 border-radius: 25px;
-border: 1px solid hsl(210, 50%, 50%);
+// border: 1px solid hsl(210, 50%, 50%);
 transition: 0.5s;
 &:hover{
-  background: hsl(210, 50%, 90%);
+  // background: hsl(210, 50%, 90%);
   color: hsl(0, 0%, 10%);
 
 }
@@ -123,11 +129,9 @@ transition: 0.5s;
 export const BlogLink = styled.a`
 transition: transform .55s;
 &:hover ${Img}{
-  transform: translateY(-25%) scale(1.05);
+  transform:  scale(.99);
   transition: transform .55s ease;
-  border: 1px solid hsl(210, 100%, 50%);
-  background: #ffffff;
-  box-shadow: 0px 3px 2px hsl(210, 100%, 23%);
+  // background: #ffffff;
 }
 
 

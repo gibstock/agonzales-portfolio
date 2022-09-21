@@ -1,13 +1,13 @@
 export const projects = [
-  // {
-  //   title: 'ANCH Clothing',
-  //   description: "Clothing E-Commerce site for the ANCH clothing brand.",
-  //     image: '/images/anch.png',
-  //     tags: ['React', 'Styled-Components', 'Firebase Auth','Firestore', 'Netlify'],
-  //   source: 'https://github.com/gibstock/onk-clothing-storefront',
-  //   visit: 'https://anch-clothing.netlify.app/',
-  //   id: 0,
-  // },
+  {
+    title: 'The Berghoff',
+    description: "Demo website for restaurant rebranding",
+      image: '/images/7.png',
+      tags: ['HTML', 'CSS', 'JS','GSAP', 'DigitalOcean'],
+    source: 'https://github.com/gibstock/onk-clothing-storefront',
+    visit: 'https://agws.app/andre/theberghoff-demo/',
+    id: 7,
+  },
   {
     title: 'Code Distiller',
     description: "Movie Review website where anyone can write a review. Built with Express, deployed to DigitalOcean.",
@@ -15,7 +15,7 @@ export const projects = [
       tags: ['NodeJS', 'ExpressJS', 'EJS','MySQL', 'DigitalOccean'],
     source: 'https://github.com/gibstock/code-distiller',
     visit: 'https://www.codedistiller.com',
-    id: 1,
+    id: 6,
   },
   {
     title: 'E-Commerce',
@@ -24,7 +24,7 @@ export const projects = [
       tags: ['React', 'NextJS', 'Sanity.io','Stripe API', 'Vercel'],
     source: 'https://github.com/gibstock/onk-ecommerce',
     visit: 'https://onk-ecommerce.vercel.app/',
-    id: 2,
+    id: 5,
   },
   {
     title: 'GPS Activated Apps',
@@ -33,7 +33,7 @@ export const projects = [
     tags: ['PWA', 'HTML', 'CSS', 'JavaScript'],
     source: 'https://github.com/design-hub-arc/arc-art-walkabout',
     visit: 'https://arc-art-walkabout-demo.netlify.app/',
-    id: 3,
+    id: 4,
   },
   {
     title: 'Real-Time Video Chat',
@@ -42,7 +42,7 @@ export const projects = [
       tags: ['React', 'Agora.io'],
     source: '#',
     visit: 'https://kcvidchat.netlify.app/create',
-    id: 4,
+    id: 3,
   },
   {
     title: 'Actor Searching App',
@@ -51,7 +51,7 @@ export const projects = [
     tags: ['React', 'API', 'Material UI', 'Axios'],
     source: 'https://github.com/gibstock/react-what-from-app',
     visit: 'https://react-what-from-app.herokuapp.com/',
-    id: 5,
+    id: 2,
   },
   {
     title: 'Get Happy Faces',
@@ -60,7 +60,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'JavaScript', 'Google Sheets'],
     source: 'https://github.com/gibstock/get-happy',
     visit: 'https://get-happy.netlify.app/',
-    id: 6,
+    id: 1,
   },
 ];
 
