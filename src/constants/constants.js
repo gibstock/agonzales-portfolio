@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Stock Chops',
+    description: "A single page app to track stocks on the US Exchange",
+      image: '/images/stock-chops.png',
+      tags: ['NextJS', 'TailwindCSS', 'React-Query','Zustand', 'Finnhub.io'],
+    source: 'https://github.com/gibstock/top-16-stock-prices',
+    visit: 'https://top-16-stock-prices.vercel.app/',
+    id: 8,
+  },
+  {
     title: 'The Berghoff',
     description: "Demo website for restaurant rebranding",
       image: '/images/7.png',

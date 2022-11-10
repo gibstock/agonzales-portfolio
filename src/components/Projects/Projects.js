@@ -37,7 +37,7 @@ const Projects = () => {
                   </TagList>
                 </div>
                 <UtilityList>
-                  {/* <ExternalLinks href={source}>Code</ExternalLinks> */}
+                  <ExternalLinks href={source} target="_blank" rel='noreferrer'>Code</ExternalLinks>
                   {/* <ExternalLinks href={visit}>Visit</ExternalLinks> */}
                 </UtilityList>
               </FlexColCenter>

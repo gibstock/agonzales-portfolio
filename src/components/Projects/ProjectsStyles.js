@@ -113,15 +113,15 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color: hsl(0,0%,95%);
+color: hsl(0,0%,22%);
 font-size: 1.6rem;
 padding:1rem 1.5rem;
 // background: hsl(210, 75%, 55%);
 border-radius: 25px;
-// border: 1px solid hsl(210, 50%, 50%);
+border: 1px solid hsl(210, 50%, 50%);
 transition: 0.5s;
 &:hover{
-  // background: hsl(210, 50%, 90%);
+  background: hsl(210, 70%, 60%);
   color: hsl(0, 0%, 10%);
 
 }
