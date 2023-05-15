@@ -5,7 +5,7 @@ export const projects = [
       image: '/images/stock-chops.png',
       tags: ['NextJS', 'TailwindCSS', 'React-Query','Zustand', 'Finnhub.io'],
     source: 'https://github.com/gibstock/top-16-stock-prices',
-    visit: 'https://top-16-stock-prices.vercel.app/',
+    visit: 'https://www.stockchops.com',
     id: 8,
   },
   {
@@ -36,12 +36,12 @@ export const projects = [
     id: 5,
   },
   {
-    title: 'GPS Activated Apps',
-    description:"Location activated progressive web app that displays art information around campus.",
+    title: 'Hope River - Made for Davis Poet Laureate',
+    description:"Location activated progressive web app that immerses the user in sound design.",
     image: '/images/2.png',
     tags: ['PWA', 'HTML', 'CSS', 'JavaScript'],
-    source: 'https://github.com/design-hub-arc/arc-art-walkabout',
-    visit: 'https://arc-art-walkabout-demo.netlify.app/',
+    source: 'private',
+    visit: 'https://www.agws.app/davis/hope-river',
     id: 4,
   },
   {
@@ -49,7 +49,7 @@ export const projects = [
     description: "Real-time video chat web app with text chat and user generated poll.",
       image: '/images/3.png',
       tags: ['React', 'Agora.io'],
-    source: '#',
+    // source: '#',
     visit: 'https://kcvidchat.netlify.app/create',
     id: 3,
   },
@@ -62,15 +62,15 @@ export const projects = [
   //   visit: 'https://react-what-from-app.herokuapp.com/',
   //   id: 2,
   // },
-  {
-    title: 'Get Happy Faces',
-    description: "Fun game where you try to fill the board with faces before the clock runs out. Features a real-time leaderboard.",
-    image: '/images/5.png',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Google Sheets'],
-    source: 'https://github.com/gibstock/get-happy',
-    visit: 'https://get-happy.netlify.app/',
-    id: 1,
-  },
+  // {
+  //   title: 'Get Happy Faces',
+  //   description: "Fun game where you try to fill the board with faces before the clock runs out. Features a real-time leaderboard.",
+  //   image: '/images/5.png',
+  //   tags: ['HTML', 'CSS', 'JavaScript', 'Google Sheets'],
+  //   source: 'https://github.com/gibstock/get-happy',
+  //   visit: 'https://get-happy.netlify.app/',
+  //   id: 1,
+  // },
 ];
 
 export const TimeLineData = [
