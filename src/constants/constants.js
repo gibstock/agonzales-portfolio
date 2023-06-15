@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Redcooler.io',
+    description: "A website to pair and store your lyrics with music for ease of access. Also a community designed for musicians and writers to discuss and collaborate on projects.",
+      image: '/images/8.png',
+      tags: ['NextJS', 'TailwindCSS', 'React-Query','Zustand', 'Appwrite.io'],
+    source: 'https://github.com/gibstock/redcooler.io',
+    visit: 'https://www.redcooler.io',
+    id: 8,
+  },
+  {
     title: 'Stock Chops',
     description: "A single page app to track stocks on the US Exchange",
       image: '/images/stock-chops.png',
