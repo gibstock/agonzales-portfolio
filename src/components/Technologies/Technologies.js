@@ -13,7 +13,7 @@ const Technologies = () =>  (
     <SectionText>I've worked with a range of technologies in the web development world from back-end to front-end. There's a tool for every problem.</SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" color='black'/>
+        <DiReact size="3rem" color='white'/>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -23,32 +23,32 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <SiTailwindcss size="3rem" color='black'/>
+        <SiTailwindcss size="3rem" color='white'/>
         <ListContainer>
           <ListTitle>Utilities</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React-Query, Zustand, Firebase, GraphQL
+            React-Query, Zustand, Firebase, GraphQL, Bamboo, BitBucket, Github, Jira
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size="3rem" color='black'/>
+        <DiFirebase size="3rem" color='white'/>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            JavaScript, NODE.JS, Express, NextJS, MySQL, MariaDB, Oracle, MongoDb
+            JavaScript, NODE.JS, Express, NextJS, Lambda Functions, MySQL, MariaDB, Oracle, MongoDb
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <GiGears size="3rem" color='black'/>
+        <GiGears size="3rem" color='white'/>
         <ListContainer>
           <ListTitle>DevOps</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Netlify, Heroku, Vercel, Strapi CMS, Sanity.io, Nginx
+            AWS, Netlify, Heroku, Vercel, Strapi CMS, Sanity.io, Nginx, Bamboo
           </ListParagraph>
         </ListContainer>
       </ListItem>

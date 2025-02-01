@@ -11,15 +11,15 @@ const Header = () =>  (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "hsl(210, 0%, 0%)"}}>
-          <GiArtificialHive size="3rem" /><Span>Andre | Web Developer</Span>
+        <a style={{ display: "flex", alignItems: "center", gap: "8px", color: "hsl(0, 0.00%, 100.00%)"}}>
+          <img src="/images/ag.jpeg" alt="ag" width={50} /><Span>Andre Gonzales | Developer</Span>
         </a>
       </Link>
     </Div1>
     <Div2>
-      <NavDropDown>
+      {/* <NavDropDown>
 
-      </NavDropDown>
+      </NavDropDown> */}
       {/* <div className="nav-dropdown-items">
         <li>
           <Link href="#projects">
@@ -39,12 +39,12 @@ const Header = () =>  (
       </div> */}
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com/gibstock'>
+      {/* <SocialIcons href='https://github.com/gibstock'>
         <AiFillGithub size="3rem" />
       </SocialIcons>
       <SocialIcons href='https://www.linkedin.com/in/andre-dev/'>
         <AiFillLinkedin size="3rem" />
-      </SocialIcons>
+      </SocialIcons> */}
       {/* <SocialIcons href='https://www.knucklecuts.com/'>
         <FaBlog size="3rem" />
       </SocialIcons> */}

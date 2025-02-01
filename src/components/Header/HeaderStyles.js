@@ -13,7 +13,9 @@ export const Container = styled.div`
   padding: .5rem 1rem;
   // padding-top: 2rem;
   z-index: 1000;
-  background: #fff;
+  opacity: .9;
+  background: #000;
+  backdrop-filter: blur(9px);
   border-bottom: 1px solid black;
 
   @media ${(props) => props.theme.breakpoints.sm} {

@@ -1,5 +1,4 @@
-import React, {useRef, useEffect} from 'react';
-import Link from 'next/link'
+import React from 'react';
 import { FlexColCenter, BlogLink, BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
@@ -7,20 +6,20 @@ import { projects } from '../../constants/constants';
 
 
 const Projects = () => {
-  const myRef = useRef()
-  useEffect(() => {
-    console.log('myRef', myRef.current)
-  }, [])
   return(
     <Section nopadding id='projects'>
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em', width: '100%'}}>
+        <img width={250} src="/images/me.webp" alt="me" />
+        <h1>Hi, I'm Andre</h1>
+      </div>
+        <SectionTitle main>Showcase</SectionTitle>
       <GridContainer>
-        {projects.map(({id, image, title, description, tags, source, visit}) => (
+        {projects.map(({id, image, title, description, tags, visit, video}) => (
           <BlogLink  key={id} href={visit} target="_blank" rel='noreferrer'>
             <BlogCard >
               <div>
-                <Img src={image} />
+                {video ? <div><video loop muted autoPlay={true} width="100%" src={video}></video></div> : <Img src={image} />} 
               </div>
               <FlexColCenter>
                 <TitleContent>
@@ -36,12 +35,6 @@ const Projects = () => {
                     ))}
                   </TagList>
                 </div>
-                <UtilityList>
-                  
-                  {/* {{source} !== undefined && <ExternalLinks href={source} target="_blank" rel='noreferrer'>The Code</ExternalLinks>} */}
-                  {/* <ExternalLinks href={source} target="_blank" rel='noreferrer'>Code</ExternalLinks> */}
-                  {/* <ExternalLinks href={visit}>Visit</ExternalLinks> */}
-                </UtilityList>
               </FlexColCenter>
             </BlogCard>
           </BlogLink>

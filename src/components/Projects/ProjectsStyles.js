@@ -32,19 +32,22 @@ export const BlogCard = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  // box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 100%;
   min-height: 400px;
   // overflow: hidden;
-  // border: 1px solid hsl(0,50%, 10%);
+  opacity: 0.7;
+  border: 1px solid rgba(255,255,255, 0.3);
   // background-image: linear-gradient(225deg, hsla(250, 50%, 90%, .3), transparent),
   // linear-gradient(39deg, hsla(10, 70%, 90%, .3), transparent) ;
   transition: 0.5s;
 
   &:hover {
-    background-color: hsl(210, 25%, 90%);
-    box-shadow: 3px 3px 20px hsl(210, 25%, 90%);
+    // background-color: hsl(204, 6.70%, 14.70%);
+    box-shadow: inset 2px 2px 22px 2px hsla(208, 25.50%, 90.00%, 0.17);
+    border: 1px solid rgba(255,255,255, 0.9);
+    opacity: 1;
   }
   
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -59,7 +62,8 @@ export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-  color: hsl(210,25%,25%);
+  color: hsl(0, 0.00%, 100.00%);
+  text-transform: uppercase;
 `;
 
 
@@ -93,7 +97,7 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: hsl(210, 20%, 15%);
+  color: hsl(0, 0.00%, 100.00%);
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -129,8 +133,8 @@ transition: 0.5s;
 export const BlogLink = styled.a`
 transition: transform .55s;
 &:hover ${Img}{
-  transform:  scale(.99);
-  transition: transform .55s ease;
+  // transform:  scale(.99);
+  // transition: transform .55s ease;
   // background: #ffffff;
 }
 
@@ -143,7 +147,8 @@ transition: transform .55s;
 
 export const TagList = styled.ul`
 display: flex;
-justify-content: space-around;
+justify-content: center;
+flex-wrap: wrap;
 padding: 2rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   flex-wrap: wrap;
@@ -152,7 +157,7 @@ padding: 2rem;
 }
 `
 export const Tag = styled.li`
-color: hsla(210, 0%, 25%, 1);
+color: rgb(255, 255, 255);
 font-size: 1.5rem;
 // background-image: linear-gradient(270deg, hsl(210, 50%, 50%) 0%, hsl(250, 50%, 50%) 100%);
 border-radius: 25px;
